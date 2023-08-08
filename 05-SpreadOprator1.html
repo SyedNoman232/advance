@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>difrrent use of spread oprator </title>
+</head>
+<body>
+    
+</body>
+<script> // it simply copied the array 1 VALUE TO ARRAY 2
+    let arr1 = [33,44,55,66,77,88,0]
+    arr1.push(30); // pushing value in array 1 auto matic added into arr2 also
+    let arr2 = arr1
+
+    // spread oprator making third array using two array 
+    let arr3 = [22,33,44,];
+    let arr4 = [11,55,66];
+    let arr5 = [...arr3,...arr4];
+
+    console.log(arr5)
+    console.log(arr2)
+// spread oprator use in object
+
+    var obj1 ={
+        name : "syed",
+        age : 30,
+    }
+    var obj2 ={
+        hobby:"coding",
+        country: 'india',
+    }
+    // now i try to mix two object in one by using third object
+    
+    var obj3 ={...obj2,...obj1}
+    console.log(obj3)
+</script>
+</html>
