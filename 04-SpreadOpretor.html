@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread opratore</title>
+</head>
+<body>
+    <h1>spread opratore</h1>
+    <ul>
+        <li>
+            it is similar with the rest opratore
+        </li>
+        <li>
+            spread operator can be used to expand an array  
+        </li>
+        <li>
+            when we call the function with the (...argument ) called spread opratore,<br>
+            when we put the (...argument ) in the parameter called Rest opratore.
+        </li>
+    </ul>
+</body>
+<script>
+    // REST OPRATORE
+    function sum(name , ...number){ // FUNCTION WITH THE NUMBER AS A PARAMETER AND REST OPRATORE
+        console.log(arguments);
+
+        document.write(`Hello ${name}: `); // TEPLATE STRING
+
+        // FOLLOWING ARE THE FOR LOOP FOR SUM OF NUMBER PARAMETER
+        let sum = 0;
+        for (let i in number){
+            sum += number[i];
+        }
+        document.write(sum,"<br><br>");
+    }
+    sum("syed noman ",20,3,80,2); // CALLING THE FUNCTION 
+
+    //  SPREAD OPRATOR
+    function num(fname,...numb){
+        console.log(arguments);
+
+        document.write(`HELLO ${fname}: `);
+        let num = 0;
+        for( let i in numb){
+            num += numb[i]; 
+        }
+        document.write(num);
+    }
+    var arr = [10,20,30,40]
+    num("syed",...arr)
+
+    // ANOTHER EXAMPLE OF SPREAD OPRATOR
+    var array = [1,2,3,4,5,6];
+    console.log(...array);// now array is spreaded.now not array
+
+    // 
+</script>
+</html>
