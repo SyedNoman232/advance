@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object litral</title>
+</head>
+<body>
+    in this metod we are learning about the object litral old and new method 
+    
+</body>
+<script>
+    // old method obect litral in js
+let name = "noman";
+let country = "india";
+var  obj = {
+    name:name,
+    country:country,
+    
+};
+console.log(obj)
+   //new method of object literal in js
+   let fullname = "syed noman ali"
+   let college = "srtmu nanded"
+
+   var object = {
+    fullname,
+    college,
+   }
+   console.log(object)
+
+   // another example of object litral 
+
+   let n = "naam"
+
+   var objects = {
+    [n]:"syed",age : 29,
+    details:function(){
+        return `${this.naam} is me and my age is ${this.age}`
+    }
+   }
+   console.log(objects)
+   console.log(objects.naam)
+   console.log(objects.age)
+   console.log(objects.details())
+</script>
+</html>
