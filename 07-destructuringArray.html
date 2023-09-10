@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>destructuring Array</title>
+</head>
+<body>
+    <h1 id="sallu">hello this the story about sallu</h1>
+    
+    
+</body>
+<script>
+// array with nested arrey and rest oprator use
+    let user = ["syed",34,"delhi",,[99292929,"male"]]
+
+    let [name,age,city,address,[...all]]= user
+   // here address is not define in array 
+    console.log(name,age,city,address)
+    console.log(...all)
+   
+// now destructuring array using the function 
+
+
+    function details([naame,crush,role,marital]){
+            console.log(naame,role,crush)
+    };
+    details(["salman","aish","actor","unmarried",])
+
+// another example with function 
+
+     function ddlj(){
+
+        return ["kajol","sharookh",1993,"blockbuster"]
+     }
+     
+    let [actress,actor,year,reviwe] = ddlj()
+
+    console.log(actor,actress,year,reviwe)
+
+
+</script>
+</html>
